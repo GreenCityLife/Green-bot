@@ -1,7 +1,7 @@
 import os
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix=";")
+bot = commands.Bot(command_prefix=";", activity=activity, status=discord.Status.idle)
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 @bot.event
@@ -10,7 +10,7 @@ async def on_ready():
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send("This is a sample help")
+    await ctx.send("Pong!")
 
 
 if __name__ == "__main__":
