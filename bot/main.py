@@ -9,7 +9,7 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
 
 @bot.command()
-async def help(ctx):
+async def ping(ctx):
     await ctx.send("This is a sample help")
 
 
