@@ -1,7 +1,7 @@
 import os
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix=";", activity=discord.Game("Geometry Dash"), status=discord.Status.idle)
+bot = commands.Bot(command_prefix=";",description="Your description here")
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 @bot.event
