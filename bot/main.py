@@ -1,8 +1,7 @@
 import os
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix=";", activity=discord.Game(name="Geometry Dash"), status=discord.Status.idle)
-TOKEN = os.getenv("DISCORD_TOKEN")
+bot = commands.Bot(command_prefix=";")
 
 @bot.event
 async def on_ready():
