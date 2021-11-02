@@ -14,9 +14,5 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send("Pong!")
 
-@bot.command()
-async def help(message): 
-   await message.send("Your mom. You're pretty dumb to ask help")
-
 if __name__ == "__main__":
     bot.run(TOKEN)
